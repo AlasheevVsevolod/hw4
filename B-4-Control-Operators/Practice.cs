@@ -488,6 +488,36 @@ namespace Basic.Lesson_4._1
 		//B4-P21/25 *While_DiceGameMultiplePlayers
 		public static void dB4_P21_25_While_DiceGameMultiplePlayers()
 		{
+			Console.WriteLine("Играем в настолку. Теперь вдвоём. Бросаем дайс до 25 очков\n");
+
+			const int minDiceNum = 1, maxDiceNum = 6;
+			int currentScore1 = 0, currentScore2 = 0, maxScore = 25, newDiceNum = 0, curPlayer = 0;
+
+			while (currentScore1 < maxScore && currentScore2 <= maxScore)
+			{
+				for (curPlayer = 1; curPlayer <= 2; curPlayer++)
+				{
+					Console.Write($"Игрок{curPlayer} бросает кубик. Выпало число: ");
+					newDiceNum = Convert.ToInt32(Console.ReadLine());
+					if (newDiceNum < minDiceNum || newDiceNum > maxDiceNum)
+					{
+						Console.WriteLine($"Игрок{curPlayer} читер!!! Больше не играешь!");
+						return;
+					}
+					if (curPlayer == 1)
+					{
+						currentScore1 += newDiceNum;
+						Console.WriteLine($"У игрока{curPlayer} Сейчас набрано {currentScore1} очков из {maxScore}");
+					}
+					else
+					{
+						currentScore2 += newDiceNum;
+						Console.WriteLine($"У игрока{curPlayer} Сейчас набрано {currentScore2} очков из {maxScore}\n");
+					}
+				}
+			}
+			Console.WriteLine($"\nИгрок{curPlayer - 1}, вы победили! Мои поздравления");
+			return;
 		}
 
 
