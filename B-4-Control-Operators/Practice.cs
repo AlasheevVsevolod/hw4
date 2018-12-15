@@ -161,7 +161,40 @@ namespace Basic.Lesson_4._1
 		//B4-P6/25. Switch_GameNavigation
 		public static void B4_P6_25_Switch_GameNavigation()
 		{
-            
+			Console.WriteLine("Обработка движения wasd. Для выхода нажмите q");
+
+			ConsoleKeyInfo key;
+
+		tmplabel:
+
+			key = Console.ReadKey();
+
+			switch (key.KeyChar)
+			{
+				case 'w':
+				case 'W':
+					Console.WriteLine("\tИдём наверх");
+					break;
+				case 'a':
+				case 'A':
+					Console.WriteLine("\tИдём налево");
+					break;
+				case 's':
+				case 'S':
+					Console.WriteLine("\tИдём вниз");
+					break;
+				case 'd':
+				case 'D':
+					Console.WriteLine("\tИдём направо");
+					break;
+			}
+
+			if (key.KeyChar != 'q')
+			{
+				goto tmplabel;
+			}
+			Console.WriteLine("\tКонец игры");
+			return;
 		}
 
 		//B4-P7/25. For_10OddEven
