@@ -12,11 +12,23 @@ namespace Basic.Lesson_4._1
 		//B4-P1/25. If_TimeOfDayGreeting
 		public static void B4_P1_25_If_TimeOfDayGreeting()
 		{
+			var timeOfDay = DateTime.Now;
+			Console.WriteLine($"{timeOfDay.TimeOfDay}\n");
+			if (timeOfDay.Hour < 6){
+				Console.WriteLine("Добрая ночь");
+			}else if (timeOfDay.Hour < 12){
+				Console.WriteLine("Доброе утро");
+			}else if (timeOfDay.Hour < 18){
+				Console.WriteLine("Добрый день");
+			}else{
+				Console.WriteLine("Добрый вечер");
+			}
 		}
 
 		//B4-P2/25. If_NumbersComparing
 		public static void B4_P2_25_If_NumbersComparing()
 		{
+
 		}
 
 		//B4-P3/25. If_PositiveNumbersComparing
