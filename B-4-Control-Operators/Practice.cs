@@ -218,6 +218,16 @@ namespace Basic.Lesson_4._1
 		//B4-P8/25. For_3DevideNumbers
 		public static void B4_P8_25_For_3DevideNumbers()
 		{
+			Console.WriteLine("Вывод чисел от 30 до 0, которые делятся на 3");
+
+			for (int i = 30; i > 0; i--)
+			{
+				if (i % 3 == 0)
+				{
+					Console.WriteLine($"Число {i} делится на 3 без остатка");
+				}
+			}
+
 		}
 
 

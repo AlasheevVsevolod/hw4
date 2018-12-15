@@ -17,8 +17,8 @@ namespace Basic.Lesson_4._1
 			//Practice.B4_P4_25_If_Akinator5Numbers();
 			//Practice.B4_P5_25_Switch_DayOfWeek();
 			//Practice.B4_P6_25_Switch_GameNavigation();
-			Practice.B4_P7_25_For_10OddEven();
-			//Practice.B4_P8_25_For_3DevideNumbers();
+			//Practice.B4_P7_25_For_10OddEven();
+			Practice.B4_P8_25_For_3DevideNumbers();
 			//Practice.B4_P9_25_For_Matrix10x10();
 			//Practice.B4_P10_25_For_HelloWorld();
 			//Practice.B4_P11_25_For_Afrochildren();
