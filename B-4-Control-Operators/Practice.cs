@@ -596,7 +596,43 @@ namespace Basic.Lesson_4._1
 		//B4-P23/25 IfElse_Calcultor
 		public static void B4_P23_25_IfElse_Calcultor()
 		{
+			Console.WriteLine("Калькулятор. Принцип: вводим первый аргумент, оператор, второй аргумент\n");
 
+			Console.Write("Введите первый аргумент: ");
+			int arg1 = Convert.ToInt32(Console.ReadLine());
+
+			Console.Write("Введите оператор: ");
+			char operation = Convert.ToChar(Console.ReadLine());
+			if (operation != '+' && operation != '-' && operation != '*' && operation != '/')
+			{
+				Console.WriteLine("Некорректный оператор");
+				return;
+			}
+
+			Console.Write("Введите второй аргумент: ");
+			int arg2 = Convert.ToInt32(Console.ReadLine());
+
+			if (operation == '+')
+			{
+				Console.WriteLine($"{arg1} + {arg2} = {arg1 + arg2}\n");
+			}
+			else if (operation == '-')
+			{
+				Console.WriteLine($"{arg1} - {arg2} = {arg1 - arg2}\n");
+			}
+			else if (operation == '*')
+			{
+				Console.WriteLine($"{arg1} * {arg2} = {arg1 * arg2}\n");
+			}
+			else
+			{
+				if (arg2 == 0)
+				{
+					Console.WriteLine("Нельзя делить на 0");
+					return;
+				}
+				Console.WriteLine($"{arg1} / {arg2} = {arg1 / arg2}\n");
+			}
 		}
 
 
