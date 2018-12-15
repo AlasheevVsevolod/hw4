@@ -399,6 +399,16 @@ namespace Basic.Lesson_4._1
 		//B4-P17/25 While_HelloWorld
 		public static void B4_P17_25_While_HelloWorld()
 		{
+			Console.WriteLine("Выводим фразу 6 раз через while");
+
+			int i = 6;
+
+			while (i > 0)
+			{
+				Console.WriteLine("Hello, world!");
+				i--;
+			}
+			return;
 		}
 
 
