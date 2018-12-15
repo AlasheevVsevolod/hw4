@@ -493,7 +493,7 @@ namespace Basic.Lesson_4._1
 			const int minDiceNum = 1, maxDiceNum = 6;
 			int currentScore1 = 0, currentScore2 = 0, maxScore = 25, newDiceNum = 0, curPlayer = 0;
 
-			while (currentScore1 < maxScore && currentScore2 <= maxScore)
+			while (true)
 			{
 				for (curPlayer = 1; curPlayer <= 2; curPlayer++)
 				{
@@ -508,16 +508,24 @@ namespace Basic.Lesson_4._1
 					{
 						currentScore1 += newDiceNum;
 						Console.WriteLine($"У игрока{curPlayer} Сейчас набрано {currentScore1} очков из {maxScore}");
+						if(currentScore1 >= maxScore)
+						{
+							Console.WriteLine($"\nИгрок{curPlayer}, вы победили! Мои поздравления");
+							return;
+						}
 					}
 					else
 					{
 						currentScore2 += newDiceNum;
 						Console.WriteLine($"У игрока{curPlayer} Сейчас набрано {currentScore2} очков из {maxScore}\n");
+						if (currentScore2 >= maxScore)
+						{
+							Console.WriteLine($"\nИгрок{curPlayer}, вы победили! Мои поздравления");
+							return;
+						}
 					}
 				}
 			}
-			Console.WriteLine($"\nИгрок{curPlayer - 1}, вы победили! Мои поздравления");
-			return;
 		}
 
 
