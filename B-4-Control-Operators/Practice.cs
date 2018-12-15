@@ -377,7 +377,22 @@ namespace Basic.Lesson_4._1
 		//B4-P16/25 DoWhile_OddEventNumber
 		public static void B4_P16_25_DoWhile_OddEventNumber()
 		{
+			Console.WriteLine("Все нечётные числа от 1 до n");
 
+			Console.WriteLine("Введите конец диапазона: ");
+			int endNum = Convert.ToInt32(Console.ReadLine());
+
+			if (endNum < 1)
+			{
+				Console.WriteLine("Нет чётных чисел в таком диапазоне");
+				return;
+			}
+
+			for (int i = 1; i <= endNum; i += 2)
+			{
+				Console.Write($"{i} ");
+			}
+			return;
 		}
 
 
