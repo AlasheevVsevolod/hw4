@@ -212,6 +212,7 @@ namespace Basic.Lesson_4._1
 					Console.WriteLine($"Число {counter} нечётное");
 				}
 			}
+			return;
 		}
 
 
@@ -227,7 +228,7 @@ namespace Basic.Lesson_4._1
 					Console.WriteLine($"Число {i} делится на 3 без остатка");
 				}
 			}
-
+			return;
 		}
 
 
@@ -244,13 +245,20 @@ namespace Basic.Lesson_4._1
 				}
 				Console.WriteLine();
 			}
-
+			return;
 		}
 
 
 		//B4-P10/25. For_HelloWorld
 		public static void B4_P10_25_For_HelloWorld()
 		{
+			Console.WriteLine("Вывод фразы 6 раз");
+
+			for (int i = 0; i < 6; i++)
+			{
+				Console.WriteLine("Hello, world!");
+			}
+			return;
 		}
 
 
