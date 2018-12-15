@@ -234,6 +234,16 @@ namespace Basic.Lesson_4._1
 		//B4-P9/25. For_Matrix10x10
 		public static void B4_P9_25_For_Matrix10x10()
 		{
+			int enumerator = 0;
+			Console.WriteLine("Вывод матрицы 10 на 10");
+			for (int row = 0; row < 10; row++)
+			{
+				for (int col = 0; col < 10; col++)
+				{
+					Console.Write($"{enumerator++}\t");
+				}
+				Console.WriteLine();
+			}
 
 		}
 
