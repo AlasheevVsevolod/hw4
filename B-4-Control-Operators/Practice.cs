@@ -265,7 +265,24 @@ namespace Basic.Lesson_4._1
 		//B4_P11/25. For_Afrochildren
 		public static void B4_P11_25_For_Afrochildren()
 		{
+			Console.WriteLine("Считалка про 10 негритят");
 
+			const int totalChildren = 10;
+
+			for (int curAmountOfChildren = totalChildren; curAmountOfChildren > 0; curAmountOfChildren--)
+			{
+				if (curAmountOfChildren > 1)
+				{
+					Console.WriteLine($"{curAmountOfChildren} негритят пошли гулять на луг");
+					Console.WriteLine($"С одним там что-то стало, осталось {curAmountOfChildren - 1} штук\n");
+				}
+				else
+				{
+					Console.WriteLine("Последний взял жену из племени Ну-Ну");
+					Console.WriteLine($"Какой-то в спальне звук - их снова {totalChildren} штук)\n");
+				}
+			}
+			return;
 		}
 
 
