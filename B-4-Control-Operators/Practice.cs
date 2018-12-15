@@ -415,7 +415,24 @@ namespace Basic.Lesson_4._1
 		//B4-P18/25 While_Multiplier
 		public static void B4_P18_25_While_Multiplier()
 		{
+			Console.WriteLine("Возводим число в степень");
 
+			Console.Write("Введите число: ");
+			int num = Convert.ToInt32(Console.ReadLine());
+
+			Console.Write("Введите степень: ");
+			int exp = Convert.ToInt32(Console.ReadLine());
+			int result = 1;
+
+			int i = 0;
+
+			while (i < exp)
+			{
+				result *= num;
+				i++;
+			}
+			Console.WriteLine($"{num} в степени {exp} = {result}");
+			return;
 		}
 
 
