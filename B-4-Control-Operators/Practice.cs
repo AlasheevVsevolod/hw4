@@ -200,7 +200,18 @@ namespace Basic.Lesson_4._1
 		//B4-P7/25. For_10OddEven
 		public static void B4_P7_25_For_10OddEven()
 		{
+			Console.WriteLine("Вывод чисел от 0 до 10 с параметром \"чётность\"");
 
+			for (int counter = 0; counter <= 10; counter++)
+			{
+				if (counter % 2 == 0)
+				{
+					Console.WriteLine($"Число {counter} чётное");
+				}
+				else {
+					Console.WriteLine($"Число {counter} нечётное");
+				}
+			}
 		}
 
 
