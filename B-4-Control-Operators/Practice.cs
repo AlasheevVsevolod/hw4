@@ -350,7 +350,27 @@ namespace Basic.Lesson_4._1
 		//B4-P15/25 While_OddEventNumber
 		public static void B4_P15_25_While_OddEventNumber()
 		{
+			Console.WriteLine("Все чётные числа от 1 до n");
 
+			Console.WriteLine("Введите конец диапазона: ");
+			int endNum = Convert.ToInt32(Console.ReadLine());
+
+			if (endNum < 2)
+			{
+				Console.WriteLine("Нет чётных чисел в таком диапазоне");
+				return;
+			}
+
+			for (int i = 1; i <= endNum; i += 2)
+			{
+				if (i == 1)
+				{
+					i++;
+				}
+
+				Console.Write($"{i} ");
+			}
+			return;
 		}
 
 
