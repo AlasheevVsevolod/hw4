@@ -129,6 +129,33 @@ namespace Basic.Lesson_4._1
 		//B4-P5/25. Switch_DayOfWeek
 		public static void B4_P5_25_Switch_DayOfWeek()
 		{
+			Console.WriteLine("Приветствие с учётом дня недели");
+
+			var dayToday = DateTime.Today;
+			switch ((int)dayToday.DayOfWeek) {
+				case 0:
+					Console.WriteLine("Доброго воскресенья, Оля!");
+					break;
+				case 1:
+					Console.WriteLine("Доброго понедельника, Оля!");
+					break;
+				case 2:
+					Console.WriteLine("Доброго вторника, Оля!");
+					break;
+				case 3:
+					Console.WriteLine("Доброй среды, Оля!");
+					break;
+				case 4:
+					Console.WriteLine("Доброго четверга, Оля!");
+					break;
+				case 5:
+					Console.WriteLine("Доброя пятницы, Оля!");
+					break;
+				case 6:
+					Console.WriteLine("Доброй субботы, Оля!");
+					break;
+			}
+			return;
 		}
 
 		//B4-P6/25. Switch_GameNavigation
