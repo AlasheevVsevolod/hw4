@@ -462,7 +462,26 @@ namespace Basic.Lesson_4._1
 		//B4-P20/25 While_DiceGame
 		public static void B4_P20_25_While_DiceGame()
 		{
+			Console.WriteLine("Играем в настолку. Бросаем дайс до 25 очков\n");
 
+			const int minDiceNum = 1, maxDiceNum = 6;
+			int currentScore = 0, maxScore = 25, newDiceNum = 0;
+
+			while (currentScore < maxScore)
+			{
+				Console.Write("Бросаем кубик. Выпало число: ");
+				newDiceNum = Convert.ToInt32(Console.ReadLine());
+				if (newDiceNum < minDiceNum || newDiceNum > maxDiceNum)
+				{
+					Console.WriteLine("Читер!!! Больше не играешь!");
+					return;
+				}
+				currentScore += newDiceNum;
+				Console.WriteLine($"Сейчас набрано {currentScore} очков из {maxScore}");
+			}
+			Console.WriteLine("\nВы победили! Мои поздравления");
+
+			return;
 		}
 
 
