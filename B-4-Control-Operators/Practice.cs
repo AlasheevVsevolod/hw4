@@ -309,7 +309,28 @@ namespace Basic.Lesson_4._1
 		//B4-P13/25 For_LettersCount
 		public static void B4_P13_25_For_LettersCount()
 		{
+			Console.WriteLine("Считаем количество букв \"а\" в введённом слове");
 
+			string inputedWord;
+			int numOfLetters = 0;
+
+			Console.Write("Введите слово: ");
+			inputedWord = Console.ReadLine();
+
+			foreach (char singleChar in inputedWord)
+			{
+				if (singleChar == ' ')
+				{
+					Console.WriteLine("Некорректная строка. Пробелы недопустимы");
+					return;
+				}
+				else if (singleChar == 'а')
+				{
+					numOfLetters++;
+				}
+			}
+			Console.WriteLine($"Символ \"а\" встречался в введённом слове {numOfLetters} раз");
+			return;
 		}
 
 
