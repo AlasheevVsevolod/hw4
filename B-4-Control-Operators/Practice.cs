@@ -532,7 +532,64 @@ namespace Basic.Lesson_4._1
 		//B4-P22_25 *While_Akinator100Numbers
 		public static void B4_P22_25_While_Akinator100Numbers()
 		{
+			int minLim = 0, maxLim = 100, tmpNum = 0, userNum;
 
+			Console.WriteLine("Бот угадывает число от 0 до 100");
+
+			Console.Write("Загадайте число: ");
+			userNum = Convert.ToInt32(Console.ReadLine());
+
+			if (userNum < 0 || userNum > 100)
+			{
+				Console.WriteLine("Число вне заданного диапазона");
+				return;
+			}
+
+			while (true)
+			{
+				/*				Console.WriteLine($"\nБот: Ваше число {minLim}?");
+								if (userNum > minLim)
+								{
+									Console.WriteLine("Вы: Нет, больше");
+								}
+								else
+								{
+									Console.WriteLine("Вы: Да, угадал");
+									break;
+								}
+
+								Console.WriteLine($"Бот: Ваше число {maxLim}?");
+								if (userNum < maxLim)
+								{
+									Console.WriteLine("Вы: Нет, меньше");
+								}
+								else
+								{
+									Console.WriteLine("Вы: Да, угадал");
+									break;
+								}
+				*/
+
+				tmpNum = (maxLim + minLim) / 2;
+
+				Console.WriteLine($"\nБот: Ваше число {tmpNum}?");
+				if (userNum > tmpNum)
+				{
+					Console.WriteLine("Вы: Нет, больше");
+					minLim = tmpNum;
+				}
+				else if(userNum < tmpNum)
+				{
+					Console.WriteLine("Вы: Нет, меньше");
+					maxLim = tmpNum;
+				}
+				else
+				{
+					Console.WriteLine("Вы: Да, угадал");
+					break;
+				}
+			}
+			return;
 		}
 
 
