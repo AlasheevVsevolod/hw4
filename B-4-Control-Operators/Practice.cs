@@ -100,7 +100,30 @@ namespace Basic.Lesson_4._1
 		//B4-P4/25. If_Akinator5Numbers
 		public static void B4_P4_25_If_Akinator5Numbers()
 		{
-            
+			int numToGuess, predictedNum = 1;
+
+			Console.WriteLine("Здесь акинатор (бот?) угадывает загаданное число от 1 до 5");
+			Console.Write("Загадывайте число: ");
+			numToGuess = Convert.ToInt32(Console.ReadLine());
+			if (numToGuess < 1 || numToGuess > 5)
+			{
+				Console.WriteLine("Введённое число некорректно");
+				return;
+			}
+			while (true) {
+				Console.WriteLine($"Бот: Допустим, ваше число {predictedNum}");
+				if (numToGuess == predictedNum)
+				{
+					break;
+				}
+				else
+				{
+					Console.WriteLine("Вы: Не угадал. Попробуй ещё раз)");
+					predictedNum++;
+				}
+			}
+			Console.WriteLine("Вы: Угадал! А ты хорош)");
+			return;
 		}
 
 		//B4-P5/25. Switch_DayOfWeek
