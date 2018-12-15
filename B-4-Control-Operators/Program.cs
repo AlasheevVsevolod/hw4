@@ -23,8 +23,8 @@ namespace Basic.Lesson_4._1
 			//Practice.B4_P10_25_For_HelloWorld();
 			//Practice.B4_P11_25_For_Afrochildren();
 			//Practice.B4_P12_25_For_Minus10OddEven();
-			Practice.B4_P13_25_For_LettersCount();
-			//Practice.B4_P14_25_For_AlphabetBack();
+			//Practice.B4_P13_25_For_LettersCount();
+			Practice.B4_P14_25_For_AlphabetBack();
 			//Practice.B4_P15_25_While_OddEventNumber();
 			//Practice.B4_P16_25_DoWhile_OddEventNumber();
 			//Practice.B4_P17_25_While_HelloWorld();

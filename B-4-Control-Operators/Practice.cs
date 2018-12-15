@@ -337,7 +337,13 @@ namespace Basic.Lesson_4._1
 		//B4-P14/25 *For_AlphabetBack
 		public static void B4_P14_25_For_AlphabetBack()
 		{
+			Console.WriteLine("Выводим английский алфавит в обратном порядке");
 
+			for (int symbolNum = 0; symbolNum < 26; symbolNum++)
+			{
+				Console.Write($"{(char)((int)'z' - symbolNum)} ");
+			}
+			return;
 		}
 
 
