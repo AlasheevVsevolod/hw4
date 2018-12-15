@@ -439,7 +439,23 @@ namespace Basic.Lesson_4._1
 		//B4-P19/25 While_SolveNumberAdding
 		public static void B4_P19_25_While_SolveNumberAdding()
 		{
+			Console.WriteLine("Обучаем пользователя умножению\n");
 
+			int guessedAnswer, correctAnswer = 4;
+
+			while (true)
+			{
+				Console.Write("Сколько будет 2 x 2?  ");
+				guessedAnswer = Convert.ToInt32(Console.ReadLine());
+
+				if (guessedAnswer == correctAnswer)
+				{
+					break;
+				}
+				Console.WriteLine("Неверно. Подумай ещё раз\n");
+			}
+			Console.WriteLine("Молодчина!\n");
+			return;
 		}
 
 
