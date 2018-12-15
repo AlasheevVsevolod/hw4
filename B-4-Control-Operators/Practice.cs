@@ -692,6 +692,16 @@ namespace Basic.Lesson_4._1
 		//B4-P25/25 Cycle_WordRevercse
 		public static void B4_P25_25_Cycle_WordRevercse()
 		{
+			Console.WriteLine("Выводим слово наоборот\n");
+
+			Console.Write("Введите слово: ");
+			string userStr = Console.ReadLine();
+
+			for (int i = userStr.Length; i > 0; i--)
+			{
+				Console.Write($"{userStr[i - 1]}");
+			}
+			return;
 		}
 	}
 }

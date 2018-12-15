@@ -34,8 +34,8 @@ namespace Basic.Lesson_4._1
 			//Practice.dB4_P21_25_While_DiceGameMultiplePlayers();
 			//Practice.B4_P22_25_While_Akinator100Numbers();
 			//Practice.B4_P23_25_IfElse_Calcultor();
-			Practice.B4_P24_25_Switch_Calculator();
-			//Practice.B4_P25_25_Cycle_WordRevercse();
+			//Practice.B4_P24_25_Switch_Calculator();
+			Practice.B4_P25_25_Cycle_WordRevercse();
 
 			Console.ReadKey();
 		}
