@@ -57,6 +57,44 @@ namespace Basic.Lesson_4._1
 		//B4-P3/25. If_PositiveNumbersComparing
 		public static void B4_P3_25_If_PositiveNumbersComparing()
 		{
+			int num1, num2;
+
+			Console.WriteLine("Сравнение двух чисел. Оба должны быть пололжительными");
+
+			Console.Write("Введите первое число: ");
+			num1 = Convert.ToInt32(Console.ReadLine());
+
+			Console.Write("Введите второе число: ");
+			num2 = Convert.ToInt32(Console.ReadLine());
+
+			if (num1 >= 0 && num2 >= 0)
+			{
+				if (num1 > num2)
+				{
+					Console.WriteLine($"Значение {num1} больше {num2} на {num1 - num2}");
+				}
+				else if (num1 < num2)
+				{
+					Console.WriteLine($"Значение {num1} меньше {num2} на {num2 - num1}");
+				}
+				else
+				{
+					Console.WriteLine("Значения равны");
+				}
+			}
+			else if (num1 < 0 && num2 < 0)
+			{
+				Console.WriteLine("Оба числа некорректны");
+			}
+			else if (num1 < 0)
+			{
+				Console.WriteLine("Первое число некорректно");
+			}
+			else
+			{
+				Console.WriteLine("Второе число некорректно");
+			}
+			return;
 		}
 
 		//B4-P4/25. If_Akinator5Numbers
