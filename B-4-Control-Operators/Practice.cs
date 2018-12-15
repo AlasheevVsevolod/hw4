@@ -23,12 +23,35 @@ namespace Basic.Lesson_4._1
 			}else{
 				Console.WriteLine("Добрый вечер");
 			}
+			return;
 		}
 
 		//B4-P2/25. If_NumbersComparing
 		public static void B4_P2_25_If_NumbersComparing()
 		{
+			int num1, num2;
 
+			Console.WriteLine("Сравнение двух чисел");
+
+			Console.Write("Введите первое число: ");
+			num1 = Convert.ToInt32(Console.ReadLine());
+
+			Console.Write("Введите второе число: ");
+			num2 = Convert.ToInt32(Console.ReadLine());
+
+			if (num1 > num2)
+			{
+				Console.WriteLine($"Значение {num1} больше {num2} на {num1 - num2}");
+			}
+			else if (num1 < num2)
+			{
+				Console.WriteLine($"Значение {num1} меньше {num2} на {num2 - num1}");
+			}
+			else
+			{
+				Console.WriteLine("Значения равны");
+			}
+			return;
 		}
 
 		//B4-P3/25. If_PositiveNumbersComparing

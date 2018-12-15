@@ -11,8 +11,8 @@ namespace Basic.Lesson_4._1
 	{
 		static void Main(string[] args)
 		{
-			Practice.B4_P1_25_If_TimeOfDayGreeting();
-			//Practice.B4_P2_25_If_NumbersComparing();
+			//Practice.B4_P1_25_If_TimeOfDayGreeting();
+			Practice.B4_P2_25_If_NumbersComparing();
 			//Practice.B4_P3_25_If_PositiveNumbersComparing();
 			//Practice.B4_P4_25_If_Akinator5Numbers();
 			//Practice.B4_P5_25_Switch_DayOfWeek();
@@ -37,7 +37,7 @@ namespace Basic.Lesson_4._1
 			//Practice.B4_P24_25_Switch_Calculator();
 			//Practice.B4_P25_25_Cycle_WordRevercse();
 
-			Console.ReadLine();
+			Console.ReadKey();
 		}
 	}
 }
