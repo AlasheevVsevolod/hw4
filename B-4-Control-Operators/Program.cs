@@ -28,14 +28,14 @@ namespace Basic.Lesson_4._1
 			//Practice.B4_P15_25_While_OddEventNumber();
 			//Practice.B4_P16_25_DoWhile_OddEventNumber();
 			//Practice.B4_P17_25_While_HelloWorld();
-			//Practice.B4_P18_25_While_Multiplier();
+			Practice.B4_P18_25_While_Multiplier();
 			//Practice.B4_P19_25_While_SolveNumberAdding();
 			//Practice.B4_P20_25_While_DiceGame();
 			//Practice.dB4_P21_25_While_DiceGameMultiplePlayers();
 			//Practice.B4_P22_25_While_Akinator100Numbers();
 			//Practice.B4_P23_25_IfElse_Calcultor();
 			//Practice.B4_P24_25_Switch_Calculator();
-			Practice.B4_P25_25_Cycle_WordRevercse();
+			//Practice.B4_P25_25_Cycle_WordRevercse();
 
 			Console.ReadKey();
 		}

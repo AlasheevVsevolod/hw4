@@ -352,6 +352,8 @@ namespace Basic.Lesson_4._1
 		{
 			Console.WriteLine("Все чётные числа от 1 до n");
 
+			int currEvenNum = 2;
+
 			Console.WriteLine("Введите конец диапазона: ");
 			int endNum = Convert.ToInt32(Console.ReadLine());
 
@@ -361,14 +363,11 @@ namespace Basic.Lesson_4._1
 				return;
 			}
 
-			for (int i = 1; i <= endNum; i += 2)
+			while(currEvenNum <= endNum)
 			{
-				if (i == 1)
-				{
-					i++;
-				}
+				Console.Write($"{currEvenNum} ");
 
-				Console.Write($"{i} ");
+				currEvenNum += 2;
 			}
 			return;
 		}
@@ -379,19 +378,23 @@ namespace Basic.Lesson_4._1
 		{
 			Console.WriteLine("Все нечётные числа от 1 до n");
 
+			int currOddNum = 1;
+
 			Console.WriteLine("Введите конец диапазона: ");
 			int endNum = Convert.ToInt32(Console.ReadLine());
 
 			if (endNum < 1)
 			{
-				Console.WriteLine("Нет чётных чисел в таком диапазоне");
+				Console.WriteLine("Нет нечётных чисел в таком диапазоне");
 				return;
 			}
 
-			for (int i = 1; i <= endNum; i += 2)
+			do
 			{
-				Console.Write($"{i} ");
-			}
+				Console.Write($"{currOddNum} ");
+				currOddNum += 2;
+			} while (currOddNum <= endNum);
+
 			return;
 		}
 
@@ -422,9 +425,16 @@ namespace Basic.Lesson_4._1
 
 			Console.Write("Введите степень: ");
 			int exp = Convert.ToInt32(Console.ReadLine());
-			int result = 1;
+			if (exp < 0)
+				Console.WriteLine("Некорректное значение степени");
 
-			int i = 0;
+			int result;
+			if (exp == 1)
+				result = num;
+			else
+				result = 1;
+
+			int i = 1;
 
 			while (i < exp)
 			{
@@ -547,29 +557,6 @@ namespace Basic.Lesson_4._1
 
 			while (true)
 			{
-				/*				Console.WriteLine($"\nБот: Ваше число {minLim}?");
-								if (userNum > minLim)
-								{
-									Console.WriteLine("Вы: Нет, больше");
-								}
-								else
-								{
-									Console.WriteLine("Вы: Да, угадал");
-									break;
-								}
-
-								Console.WriteLine($"Бот: Ваше число {maxLim}?");
-								if (userNum < maxLim)
-								{
-									Console.WriteLine("Вы: Нет, меньше");
-								}
-								else
-								{
-									Console.WriteLine("Вы: Да, угадал");
-									break;
-								}
-				*/
-
 				tmpNum = (maxLim + minLim) / 2;
 
 				Console.WriteLine($"\nБот: Ваше число {tmpNum}?");
